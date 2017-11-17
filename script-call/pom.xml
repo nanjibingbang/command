@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.liou</groupId>
+	<artifactId>script-call</artifactId>
+	<version>0.1.1</version>
+
+	<properties>
+		<command.version>2.0</command.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.command</groupId>
+			<artifactId>command-base</artifactId>
+			<version>${command.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<compilerVersion>1.8</compilerVersion>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
